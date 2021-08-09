@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(16, 18, 119, 0.116), rgba(19, 9, 150, 0.5)), url('/imagesride/login.jpg'), center/cover fixed no-repeat
+}
+
+.container {
+    width: 370px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .title {
+    text-align: center;
+    line-height: 70px;
+    margin-bottom: 10px;
+    color: white;
+    background: rgba(4, 4, 77, 0.719);
+}
+
+.container .title h2 {
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.container form {
+    padding: 25px;
+}
+
+.container form .field {
+    height: 40px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.container form .field input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid gray;
+    outline: none;
+    padding-left: 60px;
+}
+
+.container form .field i {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background: rgba(4, 4, 77, 0.719);
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    border-radius: 5px 0 0 5px;
+}
+
+
+/* .container form .login button {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 5px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    background: rgba(4, 4, 77, 0.719);
+} */
+
+
+/* .container form .login :hover {
+    color: pink;
+} */
+
+.container form .login a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 4px 135px;
+    font-size: 20px;
+    cursor: pointer;
+    background: rgba(82, 79, 79, 0.493);
+    border-radius: 10px;
+}
+
+.container form .login a:hover {
+    color: rgba(180, 14, 14, 0.5);
+}
+
+.container form .signup {
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+.forgot a {
+    font-family: cursive;
+}
+
+.forgot {
+    margin-bottom: 10px;
+}
