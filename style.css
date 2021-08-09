@@ -1,226 +1,238 @@
-                        * {
-                            margin: 0;
-                            padding: 0;
-                            box-sizing: border-box;
-                        }
-                        
-                        .navbar {
-                            position: fixed;
-                            height: 80px;
-                            width: 100%;
-                            background-color: rgba(15, 3, 71, 0.959);
-                            display: flex;
-                            justify-content: space-between;
-                            padding: 20px;
-                        }
-                        
-                        .logo {
-                            color: white;
-                            font-family: cursive;
-                            font-weight: bolder;
-                            font-size: 30px;
-                        }
-                        
-                        .nav-list {
-                            display: flex;
-                        }
-                        
-                        .nav-list a {
-                            padding: 10px;
-                            letter-spacing: 5px;
-                            color: white;
-                            font-size: 15px;
-                            font-family: 'Courier New', Courier, monospace;
-                            text-decoration: none;
-                        }
-                        
-                        .nav-list a:hover {
-                            color: rgb(28, 168, 15);
-                        }
-                        
-                        .dropdown {
-                            padding: 10px;
-                            margin-right: 5px;
-                        }
-                        
-                        #dd {
-                            width: 150px;
-                            outline: none;
-                            border-radius: 5px;
-                            background-color: turquoise;
-                            font-size: 15px;
-                        }
-                        
-                        @media(max-width: 501px) {
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+                            
+                            body {
+                                background: rgba(15, 3, 71, 0.959);
+                            }
+                            
                             .navbar {
                                 position: fixed;
-                                height: 160px;
-                                background-color: rgba(2, 2, 2, 0.801);
+                                height: 80px;
+                                width: 100%;
+                                background-color: rgba(15, 3, 71, 0.959);
                                 display: flex;
-                                justify-content: center;
-                                flex-direction: column;
-                                align-items: center;
+                                justify-content: space-between;
+                                padding: 20px;
                             }
+                            
                             .logo {
-                                font-size: 15px;
-                                position: fixed;
-                                top: 0px;
-                                left: 0px;
-                                display: inline-block;
-                                padding: 8px;
-                                letter-spacing: 2px;
-                                color: rgb(167, 130, 10);
+                                color: white;
+                                font-family: cursive;
+                                font-weight: bolder;
+                                font-size: 30px;
                             }
+                            
                             .nav-list {
-                                display: inline;
-                                margin-left: 80px;
+                                display: flex;
                             }
+                            
                             .nav-list a {
-                                letter-spacing: 2px;
+                                padding: 10px;
+                                letter-spacing: 5px;
                                 color: white;
                                 font-size: 15px;
                                 font-family: 'Courier New', Courier, monospace;
                                 text-decoration: none;
-                                color: rgba(236, 10, 134, 0.979);
                             }
+                            
+                            .nav-list a:hover {
+                                color: rgb(28, 168, 15);
+                            }
+                            
+                            .dropdown {
+                                padding: 10px;
+                                margin-right: 5px;
+                            }
+                            
                             #dd {
-                                width: 80px;
-                                height: 20px;
-                                background: rgb(167, 130, 10);
-                                /* margin-bottom: 10px; */
-                                /* padding-top: 0px; */
+                                width: 150px;
+                                outline: none;
+                                border-radius: 5px;
+                                background-color: turquoise;
+                                font-size: 15px;
                             }
-                        }
-                        
-                        @media(min-width: 501px) {
-                            .navbar {
+                            
+                            @media(max-width: 501px) {
+                                .navbar {
+                                    position: fixed;
+                                    height: 160px;
+                                    background-color: rgba(2, 2, 2, 0.801);
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                                .logo {
+                                    font-size: 15px;
+                                    position: fixed;
+                                    top: 0px;
+                                    left: 0px;
+                                    display: inline-block;
+                                    padding: 8px;
+                                    letter-spacing: 2px;
+                                    color: rgb(167, 130, 10);
+                                }
+                                .nav-list {
+                                    display: inline;
+                                    margin-left: 80px;
+                                }
+                                .nav-list a {
+                                    letter-spacing: 2px;
+                                    color: white;
+                                    font-size: 15px;
+                                    font-family: 'Courier New', Courier, monospace;
+                                    text-decoration: none;
+                                    color: rgba(236, 10, 134, 0.979);
+                                }
+                                #dd {
+                                    width: 80px;
+                                    height: 20px;
+                                    background: rgb(167, 130, 10);
+                                    /* margin-bottom: 10px; */
+                                    /* padding-top: 0px; */
+                                }
+                            }
+                            
+                            @media(min-width: 501px) {
+                                .navbar {
+                                    display: flex;
+                                    height: 100px;
+                                    /* background: rgb(38, 4, 82); */
+                                }
+                                .nav-list {
+                                    display: inline-block;
+                                    margin-left: 80px;
+                                }
+                            }
+                            
+                            .back {
+                                display: block;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                margin-top: 5.5%;
+                                padding-top: 4px;
+                            }
+                            
+                            .back {
+                                height: 400px;
+                                /* width: 100%vw; */
+                                /* background: red; */
                                 display: flex;
-                                height: 100px;
-                                /* background: rgb(38, 4, 82); */
                             }
-                            .nav-list {
-                                display: inline-block;
-                                margin-left: 80px;
+                            
+                            .left {
+                                height: 100%;
+                                width: 50%;
+                                background: url(./imagesride/phone.jpg);
+                                background-size: cover;
+                                /* background-repeat: round; */
                             }
-                        }
-                        
-                        .back {
-                            display: block;
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
-                            margin-top: 5.5%;
-                            padding-top: 4px;
-                        }
-                        
-                        .back {
-                            height: 400px;
-                            /* width: 100%vw; */
-                            /* background: red; */
-                            display: flex;
-                        }
-                        
-                        .left {
-                            height: 100%;
-                            width: 50%;
-                            background: url(./imagesride/phone.jpg);
-                            background-size: cover;
-                            /* background-repeat: round; */
-                        }
-                        
-                        .left h1 {
-                            text-align: center;
-                            align-items: center;
-                            margin-top: 25%;
-                            color: rgba(201, 243, 241, 0.945);
-                            font-size: 50px;
-                        }
-                        
-                        .right p {
-                            text-align: center;
-                            align-items: center;
-                            margin-top: 20%;
-                            color: rgba(201, 243, 241, 0.945);
-                            font-size: 25px;
-                        }
-                        
-                        .right {
-                            height: 100%;
-                            width: 50%;
-                            background: url(/imagesride/fatso);
-                            /* background-repeat: round; */
-                            background-size: cover;
-                        }
-                        
-                        .images {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        
-                        .img {
-                            margin-top: 30px;
-                            text-decoration: none;
-                            color: white;
-                            border: 2px solid white;
-                            padding: 8px 40px;
-                            /* display: inline-block; */
-                            font-size: 15px;
-                            position: relative;
-                            cursor: pointer;
-                        }
-                        
-                        .img:hover {
-                            border: 1px solid rgb(255, 38, 0);
-                            background: rgb(255, 38, 0);
-                            transition: 0.5s;
-                        }
-                        
-                        .left p {
-                            color: rgba(201, 243, 241, 0.945);
-                            font-size: 30px;
-                            padding: 10px;
-                        }
-                        
-                        @media(max-width: 501px) {
-                            .back {
-                                height: 250px;
-                                margin-top: 137px;
-                            }
+                            
                             .left h1 {
-                                margin-top: 15%;
-                                font-size: 19px;
+                                text-align: center;
+                                align-items: center;
+                                margin-top: 25%;
+                                color: rgba(201, 243, 241, 0.945);
+                                font-size: 50px;
                             }
-                            .left p {
-                                font-size: 15px;
-                                margin-top: 10px;
+                            
+                            .right p {
+                                text-align: center;
+                                align-items: center;
+                                margin-top: 20%;
+                                color: rgba(201, 243, 241, 0.945);
+                                font-size: 25px;
                             }
+                            
+                            .right {
+                                height: 100%;
+                                width: 50%;
+                                background: url(/imagesride/fatso);
+                                /* background-repeat: round; */
+                                background-size: cover;
+                            }
+                            
+                            .images {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
                             .img {
+                                margin-top: 30px;
+                                text-decoration: none;
+                                color: white;
+                                border: 2px solid white;
+                                padding: 8px 40px;
+                                /* display: inline-block; */
                                 font-size: 15px;
-                                padding: 0px;
-                                margin-top: 5px;
+                                position: relative;
+                                cursor: pointer;
+                                transition: 0.5s;
                             }
-                            .right p {
-                                margin-top: 50%;
-                                font-size: 18px;
+                            
+                            .img:hover {
+                                border: 1px solid rgb(255, 38, 0);
+                                background: rgb(255, 38, 0);
                             }
-                            .left h1 {
-                                margin-top: 5px;
-                            }
-                        }
-                        
-                        @media(min-width: 501px) {
-                            .left h1 {
-                                font-size: 40px;
-                            }
+                            
                             .left p {
-                                font-size: 18px;
+                                color: rgba(201, 243, 241, 0.945);
+                                font-size: 30px;
+                                padding: 10px;
                             }
-                            .right p {
-                                margin-top: 50%;
+                            
+                            .xxx p {
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                align-items: center;
+                                color: white;
                             }
-                            .back {
-                                margin-top: 77px;
+                            
+                            @media(max-width: 501px) {
+                                .back {
+                                    height: 250px;
+                                    margin-top: 137px;
+                                }
+                                .left h1 {
+                                    margin-top: 15%;
+                                    font-size: 19px;
+                                }
+                                .left p {
+                                    font-size: 15px;
+                                    margin-top: 10px;
+                                }
+                                .img {
+                                    font-size: 15px;
+                                    padding: 0px;
+                                    margin-top: 5px;
+                                }
+                                .right p {
+                                    margin-top: 50%;
+                                    font-size: 18px;
+                                }
+                                .left h1 {
+                                    margin-top: 5px;
+                                }
                             }
-                        }
+                            
+                            @media(min-width: 501px) {
+                                .left h1 {
+                                    font-size: 40px;
+                                }
+                                .left p {
+                                    font-size: 18px;
+                                }
+                                .right p {
+                                    margin-top: 50%;
+                                }
+                                .back {
+                                    margin-top: 77px;
+                                }
+                            }
